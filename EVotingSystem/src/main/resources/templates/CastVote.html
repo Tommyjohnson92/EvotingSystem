@@ -1,0 +1,21 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:utext="${title}"></title>
+
+</head>
+<body>
+<!-- Include _menu.html -->
+
+<h2>Choose your candidate</h2>
+<form th:action="@{/CastVote}">
+    <input type="radio" id="Candidate1" name="Candidate" value="Candidate1">
+    <label for="Candidate1">Candidate1</label><br>
+    <input type="radio" id="Candidate2" name="Candidate" value="Candidate2">
+    <label for="Candidate3">Candidate2</label><br>
+    <input type="radio" id="Candidate3" name="Candidate" value="Candidate3">
+    <label for="Candidate3">Candidate3</label><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
